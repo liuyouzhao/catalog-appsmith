@@ -13,7 +13,7 @@
         {"key": "options"},
         {"key": "isVisible"}
     ],
-    "options": "{{\nui_catalog_search_bar.refresh.data\n}}",
+    "options": "{{\nui_catalog_search_bar.refresh();\n}}",
     "placeholderText": "Select Departments",
     "isDisabled": false,
     "isRequired": false,
