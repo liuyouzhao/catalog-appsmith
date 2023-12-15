@@ -6,7 +6,12 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "variables": [],
+    "variables": [
+      {
+        "name": "__cache_expiry_ms",
+        "value": "30 * 1000"
+      }
+    ],
     "userPermissions": []
   },
   "id": "Catalogs_data_cache_manager",
