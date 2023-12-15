@@ -8,6 +8,10 @@
     "archivedActions": [],
     "variables": [
       {
+        "name": "__LOG_TAG__",
+        "value": "\"[data_cache_manager]\""
+      },
+      {
         "name": "__cache_expiry_ms",
         "value": "30 * 1000"
       }
