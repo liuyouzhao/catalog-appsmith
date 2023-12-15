@@ -6,7 +6,12 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "variables": [],
+    "variables": [
+      {
+        "name": "__LOG_TAG__",
+        "value": "\"[ui_catalog_search_bar]\""
+      }
+    ],
     "userPermissions": []
   },
   "id": "Catalogs_ui_catalog_search_bar",

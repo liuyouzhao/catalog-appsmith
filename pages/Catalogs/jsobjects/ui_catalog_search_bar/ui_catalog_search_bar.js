@@ -1,5 +1,7 @@
 export default {
+	__LOG_TAG__: "[ui_catalog_search_bar]",
 	refresh () {
+		console.log(this.__LOG_TAG__, data_all_catalogs_tree.catalogs_menu_tree_roots);
 		return data_all_catalogs_tree.catalogs_menu_tree_roots;
 	},
 	on_option_change(selected_value) {
