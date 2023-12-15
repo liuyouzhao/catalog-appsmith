@@ -1,7 +1,9 @@
 export default {
 	__LOG_TAG__: "[page_init]",
+	use_cache: true,
+
 	init_all () {
-		if(data_cache_manager.is_cache_valid()) {
+		if(data_cache_manager.is_cache_valid() && this.use_cache) {
 			console.log(this.__LOG_TAG__, "Load controller layer from cache...");
 			data_cache_manager.load_cache();
 			console.log(this.__LOG_TAG__, "Cache loaded.");
@@ -56,12 +58,17 @@ export default {
 		return "[NONE]";
 	},
 	init_js_controller() {
-		console.log(this.__LOG_TAG__, "[Loading] data_all_catalogs models...");
-		data_all_catalogs.fetch_all();
-		console.log(this.__LOG_TAG__, "[OK] data_all_catalogs");
+		console.log(this.__LOG_TAG__, "[Loading] data_all_catalogs_hash models...");
+		data_all_catalogs_hash.init();
+		console.log(this.__LOG_TAG__, "[OK] data_all_catalogs_hash");
+
+		console.log(this.__LOG_TAG__, "[Loading] data_all_catalogs_tree models...");
+		data_all_catalogs_tree.init();
+		console.log(this.__LOG_TAG__, "[OK] data_all_catalogs_tree");
+		console.debug(this.__LOG_TAG__, data_all_catalogs_tree.catalogs_menu_tree_roots);
 
 		console.log(this.__LOG_TAG__, "[Loading] data_catalog_details models...");
-		data_catalog_details.load();
+		data_catalog_details.init();
 		console.log(this.__LOG_TAG__, "[OK] data_catalog_details");
 	},
 	init_ui() {

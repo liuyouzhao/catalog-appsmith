@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "find",
-    "fullyQualifiedName": "data_all_catalogs.find",
+    "name": "create",
+    "fullyQualifiedName": "data_all_catalogs_hash.create",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Catalogs",
-    "collectionId": "Catalogs_data_all_catalogs",
+    "collectionId": "Catalogs_data_all_catalogs_hash",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,7 +22,16 @@
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {
+          "name": "name"
+        },
+        {
+          "name": "puid"
+        },
+        {
           "name": "uid"
+        },
+        {
+          "name": "level"
         }
       ]
     },
@@ -38,9 +47,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-12-15T00:08:34Z"
   },
-  "id": "Catalogs_data_all_catalogs.find",
+  "id": "Catalogs_data_all_catalogs_hash.create",
   "deleted": false,
-  "gitSyncId": "6577356807297c1b13d7f782_657a6511d4dcf03dd4a43aed"
+  "gitSyncId": "6577356807297c1b13d7f782_6579e66107297c1b13d7fc87"
 }

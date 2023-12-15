@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ui_catalog_search_bar",
+    "pageId": "Catalogs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Catalogs_ui_catalog_search_bar",
+  "deleted": false,
+  "gitSyncId": "657b99015b15071a949d1f96_657b994c5b15071a949d1fea"
+}

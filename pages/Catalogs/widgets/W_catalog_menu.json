@@ -10,15 +10,16 @@
     "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "options"}
+        {"key": "options"},
+        {"key": "isVisible"}
     ],
-    "options": "{{\ncatalog_query.getAllCatalogs.data\n}}",
+    "options": "{{\nui_catalog_search_bar.refresh()\n}}",
     "placeholderText": "Select Departments",
     "isDisabled": false,
     "isRequired": false,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
+    "isVisible": "{{\nui_catalog_search_bar.refresh.data && ui_catalog_search_bar.refresh.data.length > 0\n}}",
     "version": 1,
     "expandAll": false,
     "tags": ["Select"],
@@ -26,8 +27,11 @@
     "borderRadius": "0px",
     "originalBottomRow": 18,
     "mobileBottomRow": 20,
-    "widgetName": "catalog_menu",
-    "dynamicPropertyPathList": [{"key": "onOptionChange"}],
+    "widgetName": "W_catalog_menu",
+    "dynamicPropertyPathList": [
+        {"key": "onOptionChange"},
+        {"key": "isVisible"}
+    ],
     "displayName": "TreeSelect",
     "searchTags": [
         "dropdown",
@@ -55,7 +59,7 @@
     "originalTopRow": 11,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 53,
-    "onOptionChange": "{{\nstoreValue(\"catalog_selected\", catalog_menu.selectedOptionLabel);\nnavigateTo('Products', {\"catalog\":catalog_menu.selectedOptionLabel}, 'SAME_WINDOW');\n}}",
+    "onOptionChange": "{{\nui_catalog_search_bar.on_option_change(W_catalog_menu.selectedOptionValue);\n}}",
     "allowClear": false,
     "minDynamicHeight": 4
 }

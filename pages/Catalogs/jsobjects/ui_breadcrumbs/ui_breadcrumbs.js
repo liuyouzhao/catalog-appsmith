@@ -9,7 +9,7 @@ export default {
 		console.debug(this.__LOG_TAG__, "current_url = ", current_url);
 
 		while(c_uid && c_uid > 0) {
-			var cat = data_all_catalogs.find(c_uid);
+			var cat = data_all_catalogs_hash.find(c_uid);
 			if(!cat) {
 				throw new Error("Fatal error, the c_uid does not exist! " + c_uid);
 			}

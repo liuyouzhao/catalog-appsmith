@@ -38,7 +38,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-12-15T00:08:34Z"
   },
   "id": "Catalogs_ui_catalog_griditem.create_child_catalog_link",
   "deleted": false,

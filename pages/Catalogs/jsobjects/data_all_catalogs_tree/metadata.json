@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "page_init",
+    "name": "data_all_catalogs_tree",
     "pageId": "Catalogs",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,16 +9,16 @@
     "variables": [
       {
         "name": "__LOG_TAG__",
-        "value": "\"[page_init]\""
+        "value": "\"[data_all_catalogs_tree]\""
       },
       {
-        "name": "use_cache",
-        "value": "true"
+        "name": "catalogs_menu_tree_roots",
+        "value": "[]"
       }
     ],
     "userPermissions": []
   },
-  "id": "Catalogs_page_init",
+  "id": "Catalogs_data_all_catalogs_tree",
   "deleted": false,
-  "gitSyncId": "6577356807297c1b13d7f782_657a615cd4dcf03dd4a43a92"
+  "gitSyncId": "657b99015b15071a949d1f96_657b9cba5b15071a949d1ffe"
 }

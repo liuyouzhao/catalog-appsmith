@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "init_js_controller",
-    "fullyQualifiedName": "page_init.init_js_controller",
+    "name": "refresh",
+    "fullyQualifiedName": "ui_catalog_search_bar.refresh",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Catalogs",
-    "collectionId": "Catalogs_page_init",
+    "collectionId": "Catalogs_ui_catalog_search_bar",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,6 +23,7 @@
       "jsArguments": []
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -31,13 +32,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-12-15T00:08:34Z"
+    "createdAt": "2023-12-15T00:09:48Z"
   },
-  "id": "Catalogs_page_init.init_js_controller",
+  "id": "Catalogs_ui_catalog_search_bar.refresh",
   "deleted": false,
-  "gitSyncId": "6577356807297c1b13d7f782_657b94745b15071a949d1f64"
+  "gitSyncId": "657b99015b15071a949d1f96_657b994c5b15071a949d1fe6"
 }

@@ -4,7 +4,7 @@ export default {
 		if(!c_uid) {
 			return "All";
 		}
-		var name = data_all_catalogs.find(appsmith.URL.queryParams['c_uid']).name;
+		var name = data_all_catalogs_hash.find(appsmith.URL.queryParams['c_uid']).name;
 		return name;
 	}
 }

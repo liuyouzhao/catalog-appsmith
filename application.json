@@ -2,7 +2,7 @@
   "pages": [
     {
       "id": "Home",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Empty",
@@ -14,7 +14,7 @@
     },
     {
       "id": "Catalogs",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Products",

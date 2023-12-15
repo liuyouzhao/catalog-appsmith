@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "data_all_catalogs",
+    "name": "data_all_catalogs_hash",
     "pageId": "Catalogs",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -18,7 +18,7 @@
     ],
     "userPermissions": []
   },
-  "id": "Catalogs_data_all_catalogs",
+  "id": "Catalogs_data_all_catalogs_hash",
   "deleted": false,
   "gitSyncId": "6577356807297c1b13d7f782_6579d33d07297c1b13d7fc5d"
 }

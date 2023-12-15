@@ -1,6 +1,6 @@
 export default {
 	details_list: {},
-	load () {
+	init () {
 		this.details_list['level_1'] = {};
 		this.details_list['level_2'] = {};
 		this.details_list['level_3'] = {};

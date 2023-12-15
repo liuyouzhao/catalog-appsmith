@@ -25,7 +25,7 @@ export default {
 		var response = "";
 
 		catalog.children.forEach(child_uid => {
-			var child = data_all_catalogs.find(child_uid);
+			var child = data_all_catalogs_hash.find(child_uid);
 			var name = child.name;
 			var uid = child.uid;
 			response += template
