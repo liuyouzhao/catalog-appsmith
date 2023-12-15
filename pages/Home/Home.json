@@ -1,0 +1,69 @@
+{
+  "unpublishedPage": {
+    "name": "Home",
+    "slug": "home",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1400,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Home_Api_Fetch_Catalog_Root_Names",
+              "name": "Api_Fetch_Catalog_Root_Names",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Home_catalog_query.getAllCatalogs",
+              "name": "catalog_query.getAllCatalogs",
+              "collectionId": "Home_catalog_query",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  var treeRootsPromises = [];\n  var uniqueHash = {};\n  Api_Fetch_Catalog_Root_Names.run();\n  Api_Fetch_Catalog_Root_Names.data.sheets.forEach(sheet => {\n    var currentCats = Js_Catalog_All_By_Root_Name.run({\n      sheet_index: sheet[\"index\"]\n    });\n    var rootPromise = currentCats.then(value => {\n      var root = null;\n      value.forEach(row => {\n        console.log(row);\n        if (uniqueHash[row.Name + row.Uid]) {\n          throw new Error(row.Name + row.Uid + \" is not unique!\");\n        }\n        uniqueHash[row.Name + row.Uid] = {\n          \"label\": row.Name,\n          \"value\": row.Name + row.Uid,\n          \"children\": []\n        };\n      });\n      value.forEach(row => {\n        if (row.Parent.toLowerCase() == \"root\") {\n          root = uniqueHash[row.Name + row.Uid];\n        } else if (uniqueHash[row.Parent + row.Puid]) {\n          uniqueHash[row.Parent + row.Puid].children.push(uniqueHash[row.Name + row.Uid]);\n        } else {\n          throw new Error('Parent Catalog Not Exist. ' + row.Name + row.Id + \"  \" + row.Parent + row.Puid);\n        }\n      });\n      console.log(\"root\", root);\n      return root;\n    });\n    treeRootsPromises.push(rootPromise);\n  });\n  return Promise.all(treeRootsPromises);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Home",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_6577356807297c1b13d7f784"
+}

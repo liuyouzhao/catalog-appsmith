@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "catalog_query",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Home_catalog_query",
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_65790cd707297c1b13d7fa6a"
+}

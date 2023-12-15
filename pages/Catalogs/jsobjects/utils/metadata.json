@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Catalogs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "__LOG_TAG__",
+        "value": "\"[utils]\""
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Catalogs_utils",
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_6579f82807297c1b13d7fdcb"
+}

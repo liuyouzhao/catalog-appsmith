@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ui_catalog_gridview",
+    "pageId": "Catalogs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Catalogs_ui_catalog_gridview",
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_657a0c8807297c1b13d7fe70"
+}

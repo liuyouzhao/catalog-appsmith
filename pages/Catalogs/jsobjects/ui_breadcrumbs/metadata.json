@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "ui_breadcrumbs",
+    "pageId": "Catalogs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "__LOG_TAG__",
+        "value": "\"[ui_breadcrumbs]\""
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Catalogs_ui_breadcrumbs",
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_6579cb7a07297c1b13d7fc23"
+}

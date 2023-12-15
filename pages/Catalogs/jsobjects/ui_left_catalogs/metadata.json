@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ui_left_catalogs",
+    "pageId": "Catalogs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Catalogs_ui_left_catalogs",
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_6579d27307297c1b13d7fc55"
+}

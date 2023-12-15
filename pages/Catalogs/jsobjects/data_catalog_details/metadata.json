@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "data_catalog_details",
+    "pageId": "Catalogs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "details_list",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Catalogs_data_catalog_details",
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_657a00b907297c1b13d7fe53"
+}

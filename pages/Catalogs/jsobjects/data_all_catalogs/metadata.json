@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "data_all_catalogs",
+    "pageId": "Catalogs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "catalog_hash",
+        "value": "{}"
+      },
+      {
+        "name": "root",
+        "value": "{\n  name: \"All\",\n  uid: 0,\n  puid: null,\n  level: 0,\n  children: []\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Catalogs_data_all_catalogs",
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_6579d33d07297c1b13d7fc5d"
+}

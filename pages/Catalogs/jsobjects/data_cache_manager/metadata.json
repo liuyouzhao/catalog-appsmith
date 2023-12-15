@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "data_cache_manager",
+    "pageId": "Catalogs",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Catalogs_data_cache_manager",
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_6579eed807297c1b13d7fd0f"
+}

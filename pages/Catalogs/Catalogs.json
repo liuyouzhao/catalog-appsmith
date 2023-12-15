@@ -1,0 +1,58 @@
+{
+  "unpublishedPage": {
+    "name": "Catalogs",
+    "slug": "catalogs",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2410,
+          "containerStyle": "none",
+          "snapRows": 79,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 810,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Catalogs_page_init.init_all",
+              "name": "page_init.init_all",
+              "collectionId": "Catalogs_page_init",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "function () {\n  if (data_cache_manager.is_cache_valid()) {\n    console.log(page_init.__LOG_TAG__, \"Load controller layer from cache...\");\n    data_cache_manager.load_cache();\n    console.log(page_init.__LOG_TAG__, \"Cache loaded.\");\n    page_init.init_ui();\n    return \"[NONE]\";\n  }\n  console.log(page_init.__LOG_TAG__, \"Load model data from remote DB...\");\n  var loading_counter = 0;\n  var retry_attempt = 15;\n  data_catalogs_level_1.run().then(ff => {\n    loading_counter++;\n  });\n  data_catalogs_level_2.run().then(ff => {\n    loading_counter++;\n  });\n  data_catalogs_level_3.run().then(ff => {\n    loading_counter++;\n  });\n  data_catalogs_level_4.run().then(ff => {\n    loading_counter++;\n  });\n  data_catalogs_details_level_1.run().then(ff => {\n    loading_counter++;\n  });\n  data_catalogs_details_level_2.run().then(ff => {\n    loading_counter++;\n  });\n  data_catalogs_details_level_3.run().then(ff => {\n    loading_counter++;\n  });\n  var interval = setInterval(function () {\n    if (loading_counter >= 7) {\n      try {\n        page_init.init_js_controller();\n        page_init.init_ui();\n        data_cache_manager.save_cache();\n        console.log(page_init.__LOG_TAG__, \"[SUCESS] All data inited successfully... Cache updated.\");\n        clearInterval(interval);\n        return;\n      } catch (e) {\n        console.error(e);\n        retry_attempt--;\n      }\n      if (retry_attempt <= 0) {\n        clearInterval(interval);\n      }\n    }\n  }, 200);\n  return \"[NONE]\";\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Catalogs",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6577356807297c1b13d7f782_6579cb5407297c1b13d7fc1b"
+}
