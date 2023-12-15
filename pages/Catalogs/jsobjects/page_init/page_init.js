@@ -80,8 +80,14 @@ export default {
 		ui_left_catalogs.refresh();
 		console.log(this.__LOG_TAG__, "[OK] ui_left_catalogs inited...");
 
+		console.log(this.__LOG_TAG__, "[Loading] ui_left_catalogs models...");
+		ui_catalog_search_bar.refresh();
+		console.log(this.__LOG_TAG__, "[OK] ui_left_catalogs inited...");
+
 		console.log(this.__LOG_TAG__, "[Loading] ui_catalog_gridview models...");
 		ui_catalog_gridview.create();
 		console.log(this.__LOG_TAG__, "[OK] ui_catalog_gridview inited...");
+
+
 	}
 }
